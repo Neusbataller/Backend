@@ -18,7 +18,8 @@ router.get("/rutaGetJSON", (req, res) => {
 
 router.post("/rutaPOST", (req, res) => {
   console.log("Alguien ha accededido a la ruta POST");
-  res.send("hola haciendo pruebas POST");
+  console.log(req.body);
+  res.send("Datos recibidos");
 });
 
 router.post("/rutaPOSTconBody", (req, res) => {
